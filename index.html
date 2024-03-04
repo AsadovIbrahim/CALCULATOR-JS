@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input id="display" readonly>
+        <div id="calculator__keys">
+          <button class="calculator__key calculator__key--operator" onclick="btnClick('+')">+</button>
+          <button class="calculator__key calculator__key--operator" onclick="btnClick('-')">-</button>
+          <button class="calculator__key calculator__key--operator" onclick="btnClick('*')">X</button>
+          <button class="calculator__key calculator__key--operator" onclick="btnClick('/')">÷</button>
+          <button class="calculator__key" onclick="btnClick('7')">7</button>
+          <button class="calculator__key" onclick="btnClick('8')">8</button>
+          <button class="calculator__key" onclick="btnClick('9')">9</button>
+          <button class="calculator__key" onclick="btnClick('4')">4</button>
+          <button class="calculator__key" onclick="btnClick('5')">5</button>
+          <button class="calculator__key" onclick="btnClick('6')">6</button>
+          <button class="calculator__key" onclick="btnClick('1')">1</button>
+          <button class="calculator__key" onclick="btnClick('2')">2</button>
+          <button class="calculator__key" onclick="btnClick('3')">3</button>
+          <button class="calculator__key" onclick="btnClick('0')">0</button>
+          <button class="calculator__key" onclick="btnClick('.')">.</button>
+          <button class="calculator__key" onclick="Clear()">C</button>
+          <button class="calculator__key calculator__key--enter" onclick="Sum()">=</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
